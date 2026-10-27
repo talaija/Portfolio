@@ -20,38 +20,73 @@
         <link rel="stylesheet" type="text/css" href="style.css" />
         <style>
         body {
-            background-color: lightyellow
+            background-color: #E8DBCF
             ; 
-        }
-        </style>
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #987654;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #E8DBCF;
+}
+img {
+  border-radius: 15px; border: 12px solid #987654;
+}
+</style>
     </head>
    
     <body>
         
+        <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+        
         <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
         <h1>Talaija Harris Portfolio</h1>
-        <nav>
-            <a href="index.html">Portfolio</a> | <a href="about.html">About Me</a> | <a href="resume.html">Resume</a> | <a href="gallery.html">Gallery</a>
-        </nav>
-        <!-- See this <nav> element? ˆˆˆˆˆ It's for a navigation menu. 
-            We set this up with RELATIVE links to other HTML files 
-            that you will find in the same folder with this index.html. 
-        -->
+        
+        
         <h2>Professional Development</h2>
-        <p>One of the best resources for learning more about me is <a href="www.linkedin.com/in/talaija">My LinkedIn Profile</a>.</p>
+        <p>One of the best resources for learning more about me is <a href="https://www.linkedin.com/in/talaija">My LinkedIn Profile</a>.</p>
         <p>Each project is a <strong>big part</strong> of my academic career and professional abilities.</p>
         <h2>Academic Achievements Overview</h2>
         <p>These include some of my <strong>achievements</strong> that I have been proudly awarded among my academic career.</p>
-        <ul>
+        <ol>
             <li>Winning 1st place at Penn State Behrends Undergraduate Research Conference.</li>
             <li>Developed research in the field of Human-Animal Interaction through Behrends Psychology department.</li>
             <li>Winning an Officer Award at Penn State World Campus Psychology Programs Online Research Conference.</li>
             <li>Being apart of Penn State Behrends Mentor Project for two consecutive Semesters.</li>
             <li>Working with professors, and peers to collaborate on Various Research Projects.</li>
-        </ul>
+        </ol>
         <h3>Here is a picture of the Award Certificate I received from the Behrend Undergraduate Conference.</h3>
         <figure>
-            <img src="images/award.jpg"/>
+            <img src="images/award.jpg" width="400" height="300"/>
             <figcaption>An image of my award that was mailed to my home.</figcaption>
         </figure>
         <p>How about we look at a some of the things I <strong>learned</strong> through working on these projects.</p>
@@ -64,8 +99,8 @@
         </ol>
         <h4>Here is a picture of my research project that my team and I presented at various conferences.</h4>
         <figure>
-            <img src="images/research%20poster.jpg"/>
+            <img src="images/research%20poster.jpg" width="400" height="300"/>
             <figcaption>This shows an overview of our presented research finding for Behrends Undergrdauate Research Conference.</figcaption>
         </figure> 
-    </body>
+</body>
 </html>

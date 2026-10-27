@@ -16,18 +16,54 @@
         <link rel="stylesheet" type="text/css" href="style.css" />
         <style>
         body {
-            background-color: lightpink
+            background-color: #E8DBCF
             ; 
-        }
-        </style>
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #987654;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #E8DBCF;
+}
+img {
+  border-radius: 15px; border: 12px solid #987654;
+}
+</style>
        
     </head>
     <body>
         <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
+        <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
         <h1>About Me</h1>
-        <nav>
-            <a href="index.html">Portfolio</a> | <a href="about.html">About Me</a> | <a href="resume.html">Resume</a> | <a href="gallery.html">Gallery</a>
-        </nav>
         
         <h1>A glimpse into my life.</h1>
         
@@ -36,26 +72,26 @@
         <p>Each of these things is a <strong>big part</strong> of what makes me who I am.</p>
         <h2>Hobbies I enjoy!!</h2>
         <p>These include some of my <strong>favorite</strong> hobbies that I enjoy doing when I am not working or at school.</p>
-        <ul>
+        <ol>
             <li>Playing with my dog named Mocha.</li>
             <li>Watching movies.</li>
             <li>Shopping.</li>
             <li>Hanging out with friends.</li>
             <li>Enjoying Nature.</li>
-        </ul>
+        </ol>
         <h2>Here is a picture of my female pitbull named Mocha.</h2>
         <figure>
-            <img src="images/mocha.jpeg"/>
+            <img src="images/mocha.jpeg" width="250" height="300"/>
             <figcaption>An image of my pet.</figcaption>
         </figure>
         <h3>Here is a picture of one of my favorite sunsets that i've seen.</h3>
         <figure>
-            <img src="images/sunset.jpeg"/>
+            <img src="images/sunset.jpeg" width="250" height="300"/>
             <figcaption>An image of my favorite sunset taken at the dock near the bicentennial tower.</figcaption>
         </figure>
         <h4>Here is a picture of a crochet project that I worked on.</h4>
         <figure>
-            <img src="images/me.jpeg"/>
+            <img src="images/me.jpeg" width="250" height="300"/>
             <figcaption>An image of a crochet top that I made for a SZA and Kendrick Lamar concert.</figcaption>
         </figure>
     </body>
