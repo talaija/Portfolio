@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
-     * On Windows, go to the browser and type control + o and browse to find this file to open it.
-     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
-     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
-    -->
+<html>
     <head>
-        <!-- What's in the <head> element is a "meta" area not for display. 
-            It holds important information about the website's contents.
-            The text inside the <title> element does show in the top tab of a web browser. 
-             The <head> is where we will include info about styling the site, too. -->
+        <!-- What's in the <head> element is NOT for display in a web browser! 
+            <head> stores "meta" information describing and setting up things ABOUT this HTML file. 
+            It holds important information about the website's contents. -->
         <title>Starter HTML</title>
+        <!-- The text inside the <title> element does show in the top tab of a web browser. 
+            The <head> is where we will include info about styling the site, too.-->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Here is a place where we can add a little styling code called CSS to this page. 
@@ -53,6 +49,55 @@ ul li a {
 ul li a:hover {
   background-color: #E8DBCF;
 }
+
+h2 {
+text-align: center;
+}
+</style>
+        <style>
+* {
+  box-sizing: border-box;
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 20px solid #987654;
+  width: calc(25% - 20px);
+  border-radius: 15px;
+}
+
+div.gallery-item:hover {
+  border: 15px solid #987654;
+ 
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  div.gallery-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  div.gallery-item {
+    width: calc(100% - 20px);
+  }
+}
 </style>
     </head>
     <body>
@@ -62,25 +107,69 @@ ul li a:hover {
             <li><a href="resume.html">Resume</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
-        <h1>Gallery</h1>
-        <nav>
-            <a href="index.html">Portfolio</a> | <a href="about.html">About Me</a> | <a href="resume.html">Resume</a> | <a href="gallery.html">Gallery</a>
-        </nav>
-        <p>This is my Gallery page.</p>
+        <h2>Gallery</h2>
         
-        
-        <div class="side-by-side">
-            <p>Go back to my <a href="index.html">main page</a>.</p>
-            <figure>
-                <img src="images/llama_mp.jpg" />
-                <figcaption>Here is a llama I encountered on an amazing hiking trip in Macchu
-                    Picchu, on the Inca Trail.</figcaption>
-            </figure>
-           
+        <div class="gallery">
+            
+            <div class="gallery-item">
+                <a target="_blank" href="images/mocha.jpeg">
+                    <img src="images/mocha.jpeg" alt="Mocha" width="600" height="400">
+                </a>
+                <div class="desc">Mocha</div>
+            </div>
+            
+            <div class="gallery-item">
+                <a target="_blank" href="images/IMG_1256.jpeg">
+                    <img src="images/IMG_1256.jpeg" alt="Mocha" width="600" height="400">
+                </a>
+                <div class="desc">Happy Mocha</div>
+            </div>
+            
+            <div class="gallery-item">
+                <a target="_blank" href="images/IMG_1941.jpeg">
+                    <img src="images/IMG_1941.jpeg" alt="Mocha" width="600" height="400">
+                </a>
+                <div class="desc">Sleepy Mocha</div>
+            </div>
+            
+            <div class="gallery-item">
+                <a target="_blank" href="images/IMG_1830.jpeg">
+                    <img src="images/IMG_1830.jpeg" alt="August" width="600" height="400">
+                </a>
+                <div class="desc">Flying August</div>
+            </div>
+            
         </div>
-        <footer class="featureBlock">
-            <p>Shout out to the w3c community, and the developers of markup languages, and the oXygen XML editor!</p>
-            <p>We are . . . Digit at Penn State Behrend!</p>
-        </footer>
+        <div class="gallery">
+            
+            <div class="gallery-item">
+                <a target="_blank" href="images/IMG_1745.jpeg">
+                    <img src="images/IMG_1745.jpeg" alt="August" width="600" height="400">
+                </a>
+                <div class="desc">Cutie August</div>
+            </div>
+            
+            <div class="gallery-item">
+                <a target="_blank" href="images/IMG_1829.jpeg">
+                    <img src="images/IMG_1829.jpeg" alt="August" width="600" height="400">
+                </a>
+                <div class="desc">August Playing</div>
+            </div>
+            
+            <div class="gallery-item">
+                <a target="_blank" href="images/IMG_1711.jpeg">
+                    <img src="images/IMG_1711.jpeg" alt="Beach" width="600" height="400">
+                </a>
+                <div class="desc">Beach Glass Hunting Day</div>
+            </div>
+            
+            <div class="gallery-item">
+                <a target="_blank" href="images/IMG_1535.jpeg">
+                    <img src="images/IMG_1535.jpeg" alt="Hike" width="600" height="400">
+                </a>
+                <div class="desc">Walnut Creek Hike Day</div>
+            </div>
+            
+        </div>
     </body>
 </html>
